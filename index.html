@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Yujiao He - Developer</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Yujiao</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 px-4 my-5 py-5 text-center">
+                    <!-- hello word -->
+                    <img class="d-block mx-auto mb-4 rounded-circle my_image" src="./images/my_pic.jpg" alt="my_image">
+                    <h1 class="my-5">👋 Hello, I'm Yujiao.</h1>
+                    <!-- connect Linkedin -->
+                    <p>
+                        <i class="fa-solid fa-computer-mouse" style="color: #545353"></i>
+                        <span>Connect to My </span>
+                        <a href="https://www.linkedin.com/in/yujiao-he-46360126a/">Linkedin</a>
+                    </p>
+                </div>
+
+                <!-- code block -->
+                <div class="col-lg-6 my-5 text-start code-block rounded">
+                    <!-- code block button -->
+                    <div class="mt-2">
+                        <span class="badge text-bg-danger rounded-circle code-circle"> </span>
+                        <span class="badge text-bg-warning rounded-circle code-circle"> </span>
+                        <span class="badge text-bg-success rounded-circle code-circle"> </span>
+                    </div>
+
+
+                    <!-- code block code -->
+                    <div class="ps-3">
+                        <pre class="text-light code-content"><code>
+<span class="python-keywords">class </span>Developer:
+    <span class="python-keywords">def </span><span class="python-init">__init__</span>(<span
+                                class="python-self">self</span><span class="python-keywords">, </span>name<span
+                                class="python-keywords">, </span>education<span class="python-keywords">, </span>experience<span
+                                class="python-keywords">, </span>interests):
+        <span class="python-self">self</span>.name = name
+        <span class="python-self">self</span>.education = education
+        <span class="python-self">self</span>.experience = experience
+        <span class="python-self">self</span>.interests = interests
+
+    <span class="python-keywords">def </span><span class="python-init">__repr__</span>(<span
+                                class="python-self">self</span>):
+        <span class="python-keywords">return</span> <span class="python-string">f"Developer(Name=</span><span class="python-init">{</span><span
+        class="python-self">self</span>.name<span class="python-init">}</span>, <span
+        class="python-string">"</span>
+               <span class="python-string">f"Education=</span><span class="python-init">{</span><span
+                    class="python-self">self</span>.education<span class="python-init">}</span>, <span
+                    class="python-string">"</span>
+               <span class="python-string">f"Experience=</span><span class="python-init">{</span><span
+                    class="python-self">self</span>.experience<span class="python-init">}</span>, <span
+                    class="python-string">"</span>
+               <span class="python-string">f"interests=</span><span class="python-init">{</span><span
+                    class="python-self">self</span>.interests<span class="python-init">}</span><span
+                    class="python-string">)"</span>
+
+
+<span class="python-keywords">if</span> __name__ == <span class="python-string">"__main__"</span>:
+    yujiao = Developer(<span class="python-string">"Yujiao He"</span><span class="python-keywords">, </span><span
+                                class="python-string">"Master"</span><span class="python-keywords">, </span><span
+                                class="python-num">6</span><span class="python-keywords">, </span>[<span
+                                class="python-string">"Cooking"</span><span class="python-keywords">, </span><span
+                                class="python-string">"Reading"</span><span class="python-keywords">, </span><span
+                                class="python-string">"Cycling"</span>])
+    <span class="python-buildin">print</span>(yujiao)
+
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="row mb-2 mt-5 pt-4">
+                    <h1 class="mb-3">About Me</h1>
+                    <div class="dot-container mb-3">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+                    <p>Planting dots and connecting them one day.</p>
+                </div>
+
+                <!-- code block -->
+                <div class="col-lg-6 my-4 p-4 text-start code-block rounded text-light">
+                    <p class="text-align-justify">Hi,</p>
+                    <p>My name is Yujiao, a postgradute of Southeast University in 2016. I have 6 years of work
+                        experience in semiconductor industry.
+                    </p>
+                    <p>I found my passion in coding when I was an engineer in manufacturing. I enjoyed coming up
+                        with coding solutions to help team and myself to better achivements.</p>
+                    <p>After taking a 100 days python bootcamp this year, I made up my mind to pursue my passion -- to
+                        be a full time developer. Check out my skills 👉👉👉
+                    </p>
+                    <p>Do you want to know more about me, or do you have any potential opportunities that I may be a
+                        good fit? Let's contact if so!</p>
+                </div>
+
+                <!-- skill matrix -->
+                <div class="col-lg-6 my-5 py-4 px-4 text-center">
+                    <div class="row ms-3 ms-2">
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img src="./images/mes.png" class="img-mes">
+                        </div>
+                        <div class="col-md-2 col-3 m-2 border rounded shadow-sm justify-content-center p-3">
+                            <img
+                                src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="row mb-2 mt-5 pt-5">
+                    <h1 class="mb-4">Projects</h1>
+                    <p>These are my open source projects available on Github.</p>
+                </div>
+
+                <div class="row my-4 justify-content-center">
+                    <div class="col-sm-12">
+                        <div class="row text-start">
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded m-2 bg-light">
+                                    <div class="pb-2 git-repo-name">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                        <a
+                                            href="https://github.com/yujiaohe/python-100-days-of-code">python-100-days-of-code</a>
+                                    </div>
+                                    <div class="git-repo-intro mt-auto">
+                                        <p class="text-body-secondary">Projects from Angela Yu's Complete Python Pro
+                                            Bootcamp, spanning 100
+                                            days of learning and coding.</p>
+                                    </div>
+                                    <div class="git-repo-lang">
+                                        <p>
+                                            <span class="repo-language-color" style="background-color: #DA5B0B"></span>
+                                            <span class="text-body-secondary">Jupyter Notebook</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded m-2 bg-light">
+                                    <div class="pb-2 git-repo-name">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                        <a
+                                            href="https://github.com/yujiaohe/python-common-utilities">python-common-utilities</a>
+                                    </div>
+
+                                    <div class="git-repo-intro mt-auto">
+                                        <p class="text-body-secondary">A collection of helpful Python utilities for
+                                            common programming tasks.
+                                        </p>
+                                    </div>
+                                    <div class="git-repo-lang">
+                                        <p>
+                                            <span class="repo-language-color" style="background-color: #3572A5"></span>
+                                            <span class="text-body-secondary">Python</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded m-2 bg-light">
+                                    <div class="pb-2 git-repo-name">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                        <a href="https://github.com/yujiaohe/an-online-shop">an-online-shop</a>
+                                    </div>
+                                    <div class="git-repo-intro mt-auto">
+                                        <p class="text-body-secondary">A Flask-based web application that provides a
+                                            platform for product management, purchasing, payment.</p>
+                                    </div>
+                                    <div class="git-repo-lang">
+                                        <p>
+                                            <span class="repo-language-color" style="background-color: #563d7c"></span>
+                                            <span class="text-body-secondary">CSS</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded m-2 bg-light">
+                                    <div class="pb-2 git-repo-name">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                        <a href="https://github.com/yujiaohe/blog-with-users">blog-with-users</a>
+                                    </div>
+                                    <div class="git-repo-intro">
+                                        <p class="text-body-secondary">Flask-based web blog with user management,
+                                            enabling content creation and interaction.</p>
+                                    </div>
+                                    <div class="git-repo-lang">
+                                        <p>
+                                            <span class="repo-language-color" style="background-color: #f1e05a"></span>
+                                            <span class="text-body-secondary">JavaScript</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded m-2 bg-light">
+                                    <div class="pb-2 git-repo-name">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                        <a
+                                            href="https://github.com/yujiaohe/cafe-api-restful-routing">cafe-api-restful-routing</a>
+                                    </div>
+                                    <div class="git-repo-intro mt-auto">
+                                        <p class="text-body-secondary">RESTful API for a cafe, built with Flask,
+                                            featuring structured routing and data endpoints.</p>
+                                    </div>
+                                    <div class="git-repo-lang">
+                                        <p>
+                                            <span class="repo-language-color" style="background-color: #3572A5"></span>
+                                            <span class="text-body-secondary">Python</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="p-3 border rounded m-2 bg-light">
+                                    <div class="pb-2 git-repo-name">
+                                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                                            data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
+                                            <path
+                                                d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+                                            </path>
+                                        </svg>
+                                        <a href="https://github.com/yujiaohe/quiz-game">quiz-game</a>
+                                    </div>
+                                    <div class="git-repo-intro mt-auto">
+                                        <p class="text-body-secondary">3 versions of a quiz game: text-based,
+                                            GUI-based,
+                                            and web-based. Implement by Python, HTML, Bootstrap.</p>
+                                    </div>
+                                    <div class="git-repo-lang">
+                                        <p>
+                                            <span class="repo-language-color" style="background-color: #3572A5"></span>
+                                            <span class="text-body-secondary">Python</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="mt-5 contact-all">
+                <div class="contact-info">
+                    <div class="justify-content-center mb-2">
+                        <h1 class="mb-4">Get In Touch!</h1>
+                        <p>Feel free to contact me if you have any questions.</p>
+                        <a href="mailto:heyujiaohuhu@gmail.com">CONTACT ME</a>
+                    </div>
+                    <div class="pt-2">
+                        <a class="mx-1" href="https://www.linkedin.com/in/yujiao-he-46360126a/"> <i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a class="mx-1" href="https://github.com/yujiaohe"><i class="fa-brands fa-github"></i></a>
+
+                        <a class="mx-1" href="https://t.me/sheepfree"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="copyright">© 2023 Yujiao He</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Bootstrap popper and JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+
+    <!-- Self JS -->
+    <script src="./js/navbar-toggle.js"></script>
+</body>
+
+</html>

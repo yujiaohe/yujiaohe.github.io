@@ -1,0 +1,226 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eeecec;
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-blend-mode: lighten;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.my_image {
+    background-color: #d3d3d3;
+    height: 120px;
+    width: 120px;
+}
+
+.code-block {
+    background-color: #2b2b2b;
+}
+
+.code-circle {
+    width: 10px;
+    height: 13px;
+}
+
+.code-content {
+    white-space: pre-wrap;
+}
+
+.python-keywords {
+    color: #C77632;
+}
+
+.python-init {
+    color: #B201B2;
+}
+
+.python-self {
+    color: #94558D;
+}
+
+.python-buildin {
+    color: #8788C5;
+}
+
+.python-fc-name {
+    color: #FFC56D;
+}
+
+.python-string {
+    color: #669158;
+}
+
+.python-num {
+    color:6897BB;
+}
+
+.img-mes {
+    width: 90%;
+}
+
+
+.dot-container {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    background-color: rgb(190, 189, 189);
+    animation: drawLine 3s linear forwards;
+    transform-origin: left center;
+    animation-delay: 1s;
+}
+
+@media (max-width: 576px) {
+    /* Adjust styles for small screens */
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(190, 189, 189);
+        border-radius: 50%;
+        margin: 0 3%;
+    }
+
+    @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: calc(100%/2);
+        }
+    }
+}
+
+  /* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust styles for medium screens */
+    .dot {
+        width: 12px;
+        height: 12px;
+        background-color: rgb(190, 189, 189);
+        border-radius: 50%;
+        margin: 0 2%;
+    }
+
+    
+    @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: calc(100%/3);
+        }
+    }  
+}
+
+/* Large screens (desktops) */
+@media (min-width: 993px) {
+    /* Adjust styles for large screens */
+    .dot {
+        width: 13px;
+        height: 13px;
+        background-color: rgb(190, 189, 189);
+        border-radius: 50%;
+        margin: 0 14px;
+    }
+
+    @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+    
+        100% {
+            width: calc(100%/4);
+        }
+    }  
+}
+
+/* Extra Large screens (desktops) */
+@media (min-width: 1200px) {
+    /* Adjust styles for large screens */
+    .dot {
+        width: 13px;
+        height: 13px;
+        background-color: rgb(190, 189, 189);
+        border-radius: 50%;
+        margin: 0 16px;
+    }
+
+    @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+    
+        100% {
+            width: calc(100%/5);
+        }
+    }  
+}
+
+
+
+.bg-light {
+    --bs-bg-opacity: 0.7;
+    height: 85%;
+}
+
+.git-repo-name {
+    font-size: .9rem;
+    min-height: 20%;
+}
+
+.git-repo-intro {
+    font-size: .8rem;
+    min-height: 40%;
+}
+
+.git-repo-lang {
+    font-size: .7rem;
+    margin-top: 10px;
+}
+
+.repo-language-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-primer-border-contrast);
+    border-radius: 50%;
+}
+
+.contact-all {
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    color:#545353;
+    font-size: 1.5rem;
+}
+
+
+.copyright {
+    font-size: .8rem;
+    color: #888;
+    margin: 0;
+}
