@@ -102,6 +102,7 @@ section {
 }
 
 @media (max-width: 576px) {
+
     /* Adjust styles for small screens */
     .dot {
         width: 10px;
@@ -122,8 +123,9 @@ section {
     }
 }
 
-  /* Medium screens (tablets) */
+/* Medium screens (tablets) */
 @media (min-width: 577px) and (max-width: 992px) {
+
     /* Adjust styles for medium screens */
     .dot {
         width: 12px;
@@ -133,7 +135,7 @@ section {
         margin: 0 2%;
     }
 
-    
+
     @keyframes drawLine {
         0% {
             width: 0;
@@ -142,11 +144,12 @@ section {
         100% {
             width: calc(100%/3);
         }
-    }  
+    }
 }
 
 /* Large screens (desktops) */
 @media (min-width: 993px) {
+
     /* Adjust styles for large screens */
     .dot {
         width: 13px;
@@ -160,15 +163,16 @@ section {
         0% {
             width: 0;
         }
-    
+
         100% {
             width: calc(100%/4);
         }
-    }  
+    }
 }
 
 /* Extra Large screens (desktops) */
 @media (min-width: 1200px) {
+
     /* Adjust styles for large screens */
     .dot {
         width: 13px;
@@ -182,11 +186,11 @@ section {
         0% {
             width: 0;
         }
-    
+
         100% {
             width: calc(100%/5);
         }
-    }  
+    }
 }
 
 
@@ -229,10 +233,14 @@ section {
 }
 
 .fa-brands {
-    color:#545353;
+    color: #545353;
     font-size: 1.5rem;
 }
 
+.contact-icon {
+    color: #545353;
+    font-size: 1.5rem;
+}
 
 .copyright {
     font-size: .8rem;
