@@ -1,3 +1,5 @@
 # yujiaohe.github.io
 
-👋 Hi, here is respository of yujiao's personal website.
+👋 Hi, this is the respository of yujiao's personal website.
+
+👉 You are welcome to visit it [here](https://yujiaohe.github.io/).
